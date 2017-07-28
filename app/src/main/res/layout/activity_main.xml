@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#8BC34A"
+    android:orientation="vertical"
+    tools:context="cruso.umg.gt.umgappparqueov2.MainActivity"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Gestion de Parqueo UMG" />
+
+    <Button
+        android:id="@+id/btlogin"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:background="@drawable/bt_circular_default"
+        android:hint="Login"
+        android:layout_margin="1dp"
+        />
+
+    <Button
+        android:id="@+id/btregistro"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:background="@drawable/bt_circular_default"
+        android:hint="Registro"
+        android:layout_margin="1dp"
+        />
+    <Button
+        android:id="@+id/btmapa"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:background="@drawable/bt_circular_default"
+        android:hint="Mapa"
+        android:layout_margin="1dp"
+        />
+
+</LinearLayout>
