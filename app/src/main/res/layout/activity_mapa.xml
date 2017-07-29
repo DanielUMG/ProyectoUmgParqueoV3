@@ -1,14 +1,197 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="cruso.umg.gt.umgappparqueov2.Mapa">
+    android:orientation="vertical"
+    tools:context="cruso.umg.gt.umgappparqueov2.Mapa"
+    android:weightSum="1">
 
     <TextView
+        android:id="@+id/tituloreservacion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="MAPA"
-        />
-</android.support.constraint.ConstraintLayout>
+        android:text="@string/tituloreservacion"
+        tools:layout_editor_absoluteX="127dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/instruccionesreservacion"
+        android:layout_width="347dp"
+        android:layout_height="wrap_content"
+        android:text="@string/instrucciones"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="46dp" />
+    <TextView
+        android:id="@+id/disponibilidad"
+        android:layout_width="347dp"
+        android:layout_height="wrap_content"
+        android:text="@string/disponibilidad"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="46dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <Button
+            android:id="@+id/estacionamiento01"
+            android:layout_width="69dp"
+            android:layout_height="93dp"
+            android:onClick="ocupar01"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/estacionamiento02"
+            android:layout_width="69dp"
+            android:layout_height="93dp"
+            android:text="2"
+            android:onClick="ocupar02"/>
+
+        <Button
+            android:id="@+id/estacionamiento03"
+            android:layout_width="69dp"
+            android:layout_height="93dp"
+            android:text="3"
+            android:onClick="ocupar03"/>
+
+        <Button
+            android:id="@+id/estacionamiento04"
+            android:layout_width="69dp"
+            android:layout_height="93dp"
+            android:text="4"
+            android:onClick="ocupar04"/>
+
+        <Button
+            android:id="@+id/estacionamiento05"
+            android:layout_width="69dp"
+            android:layout_height="93dp"
+            android:text="5"
+            android:onClick="ocupar05"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:orientation="horizontal"
+        android:layout_weight="0.48"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        >
+
+
+        <TextView
+            android:id="@+id/entrada"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Entrada->"
+            tools:layout_editor_absoluteX="127dp"
+            tools:layout_editor_absoluteY="16dp" />
+        <TextView
+            android:id="@+id/salida"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Salida->"
+            tools:layout_editor_absoluteX="127dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <Button
+            android:id="@+id/estacionamiento06"
+            android:layout_width="69dp"
+            android:layout_height="93dp"
+            android:text="6"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="305dp"
+            android:onClick="ocupar06"/>
+
+        <Button
+            android:id="@+id/estacionamiento07"
+            android:layout_width="69dp"
+            android:layout_height="93dp"
+            android:text="7"
+            tools:layout_editor_absoluteX="85dp"
+            tools:layout_editor_absoluteY="305dp"
+            android:onClick="ocupar07"/>
+
+        <Button
+            android:id="@+id/estacionamiento08"
+            android:layout_width="69dp"
+            android:layout_height="93dp"
+            android:text="8"
+            tools:layout_editor_absoluteX="154dp"
+            tools:layout_editor_absoluteY="305dp"
+            android:onClick="ocupar08"/>
+
+        <Button
+            android:id="@+id/estacionamiento09"
+            android:layout_width="69dp"
+            android:layout_height="93dp"
+            android:text="9"
+            tools:layout_editor_absoluteX="223dp"
+            tools:layout_editor_absoluteY="305dp"
+            android:onClick="ocupar09"/>
+
+        <Button
+            android:id="@+id/estacionamiento10"
+            android:layout_width="69dp"
+            android:layout_height="93dp"
+            android:text="10"
+            tools:layout_editor_absoluteX="292dp"
+            tools:layout_editor_absoluteY="305dp"
+            android:onClick="ocupar10"/>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/botoooonnn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/buttonregresar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Regresar"
+            tools:layout_editor_absoluteX="146dp"
+            tools:layout_editor_absoluteY="432dp" />
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

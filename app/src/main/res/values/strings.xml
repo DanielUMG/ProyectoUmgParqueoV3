@@ -14,4 +14,24 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
+
+
+    <string name="tituloreservacion">Reservacion de parqueo</string>
+    <string name="instrucciones">A continuacion se presenta un diagrama del parqueo, solamente podra reservar aquel que no este ocupado por un vehiculo</string>
+    <string name="disponibilidad">Automaticamente el estacionamiento estara disponible hasta que se acabe el tiempo reservado</string>
+
+    <string name="titulodiagrama">Diagrama Parqueo</string>
+    <string name="regresar">Regresar</string>
+
+    <string name="guardar">Guardar</string>
+
+
+    <string name="horass">Numero de Horas a reservar?</string>
+    <string-array name="horas">
+        <item>1 Hora</item>
+        <item>2 Horas</item>
+        <item>3 Horas</item>
+        <item>4 Horas</item>
+        <item>5 Horas</item>
+    </string-array>
 </resources>

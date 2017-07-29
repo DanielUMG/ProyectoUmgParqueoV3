@@ -15,20 +15,16 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        btnlogin = (Button) findViewById(R.id.btlogin);
-        btnregistro = (Button) findViewById(R.id.btregistro);
+    }
+    public void login(View v) {
+        Intent btn1 = new Intent(MainActivity.this, Login.class);
+        startActivity(btn1);
 
-        btnlogin.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent btn1 = new Intent(MainActivity.this, Login.class);
-                startActivity(btn1);
-                Intent btn2 = new Intent(MainActivity.this, Registro.class);
+    }
 
-                startActivity(btn2);
-            }
-        });
+    public void registro(View v) {
 
-
+        Intent btn2 = new Intent(MainActivity.this, Registro.class);
+        startActivity(btn2);
     }
 }

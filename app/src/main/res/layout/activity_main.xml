@@ -10,35 +10,37 @@
     android:weightSum="1">
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="203dp"
+        android:layout_height="44dp"
         android:layout_gravity="center"
+        android:fontFamily="monospace"
         android:text="Gestion de Parqueo UMG" />
 
     <Button
         android:id="@+id/btlogin"
-        android:layout_width="65dp"
-        android:layout_height="65dp"
+        android:layout_width="158dp"
+        android:layout_height="132dp"
         android:background="@drawable/bt_circular_default"
         android:hint="Login"
-        android:layout_margin="1dp"
-        />
+        android:layout_gravity="center"
+        android:onClick="login"
+        android:layout_margin="1dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="75dp">
+
+    </LinearLayout>
 
     <Button
         android:id="@+id/btregistro"
-        android:layout_width="65dp"
-        android:layout_height="65dp"
+        android:layout_width="158dp"
+        android:layout_height="132dp"
+        android:layout_gravity="center"
+        android:layout_margin="1dp"
         android:background="@drawable/bt_circular_default"
         android:hint="Registro"
-        android:layout_margin="1dp"
-        />
-    <Button
-        android:id="@+id/btmapa"
-        android:layout_width="65dp"
-        android:layout_height="65dp"
-        android:background="@drawable/bt_circular_default"
-        android:hint="Mapa"
-        android:layout_margin="1dp"
-        />
+        android:onClick="registro"
+        android:layout_weight="0.05" />
 
 </LinearLayout>

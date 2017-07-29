@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="cruso.umg.gt.umgappparqueov2.Reservar">
+
+    <TextView
+        android:id="@+id/tituloreservar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tituloreservacion"
+        tools:layout_editor_absoluteX="127dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nombre:" />
+
+    <EditText
+        android:id="@+id/nombrereserva"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No. Parqueo" />
+
+    <TextView
+        android:id="@+id/noparqueo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="date"
+        android:layout_weight="0.00" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hora de Inicio:" />
+
+    <TextView
+        android:id="@+id/inicio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="time"
+        android:layout_weight="0.00" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Horas a reservar?" />
+
+    <Spinner
+        android:id="@+id/SpinnerFeedbackType"
+        android:layout_height="wrap_content"
+        android:prompt="@string/horass"
+        android:layout_width="fill_parent"
+        android:entries="@array/horas">
+    </Spinner>
+
+
+    <Button
+        android:id="@+id/ButtonSendFeedback"
+        android:layout_height="wrap_content"
+        android:text="@string/guardar"
+        android:onClick=""
+        android:layout_width="fill_parent">
+    </Button>
+
+</LinearLayout>
